@@ -48,26 +48,34 @@
 // console.log(miJardin)
 // console.log(plantas)
 
-//OTRA MANERA con indexOf
+// //OTRA MANERA con indexOf
+// const jardin = "planta flor flor planta oruga planta flor flor planta planta calavera flor flor";
+// const miJardin = jardin.split(" ");
+// let indexOruga = miJardin.indexOf("oruga");
+// let indexVeneno = miJardin.indexOf("calavera");
+// let plantas =[];
+
+
+// }
+// for (let i=0; i < miJardin.length; i ++) {
+//    if (i< indexOruga || i > indexVeneno) {
+//        plantas.push(miJardin[i])
+//    }
+// }
+
+
+// console.log(miJardin)
+// console.log(plantas)
+
+
+// EJERCICIO RESUELTO CON SPLICE
 const jardin = "planta flor flor planta oruga planta flor flor planta planta calavera flor flor";
 const miJardin = jardin.split(" ");
 let indexOruga = miJardin.indexOf("oruga");
 let indexVeneno = miJardin.indexOf("calavera");
-let plantas =[];
-
-// for (let i=0; i < miJardin.length; i ++) {
-//     if(miJardin[i]=== "oruga") {
-//     indexOruga = i;
-//     }else if (miJardin [i] ==="calavera") {
-//     indexVeneno=i;
-//     }
-// }
-for (let i=0; i < miJardin.length; i ++) {
-   if (i< indexOruga || i > indexVeneno) {
-       plantas.push(miJardin[i])
-   }
-}
+console.log(miJardin)
+let seresEliminados = miJardin.splice(indexOruga, (indexVeneno - indexOruga)+ 1);
 
 
 console.log(miJardin)
-console.log(plantas)
+console.log(seresEliminados)

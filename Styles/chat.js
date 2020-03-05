@@ -11,24 +11,23 @@
 // Ingrese nombres de usuarias: Ada Grace Marie
 // Ada, Grace y 1 persona(s) más están conectadas
 
-let name = prompt`Ingrese los nombres de las participante`;
-let userName = name.split("  ");
-let mensaje = name  +" está conectada"
-let firstName = name.indexOf(0);
-let secondName = name.indexOf(1);
+let name = prompt("Ingrese los nombres de las participante");
+let userName = name.split(" ");
+let mensaje = name +" está conectada";
+let mensaje2 = name + " están conectados";
 
-
-for (let i=0; i < userName.length; i ++) {
-    userName = Number(name[i])
-    if(userName === 1) {
-        alert(mensaje)
-    } else if (userName === 2) {
-        alert(name + ` están conectados`)
-    } else if (userName >= 3) {
-        alert(name + ` y 1 usuario más están conectados`)
-    }    
+if (userName.length == 1) {
+    alert(mensaje)
+}  else if (userName.length ==2) {
+    alert(mensaje2)
+} else if (userName.length ==3) {
+    let firstName = userName.shift();
+    let secondName = userName.shift();
+    alert(`${firstName}, ${secondName} y 1 usuario más están conectados`)
+} 
+else {
+    let firstName = userName.shift();
+    let secondName = userName.shift();
+    alert(`${firstName}, ${secondName} y más usuarios están conectados`)
 }
 
-// alert(mensaje);
- // users += name;
-    // console.log(userName);

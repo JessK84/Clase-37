@@ -2,12 +2,15 @@
 // Ingrese números: 5 7 99 34 54 2 12
 // El menor número es: 2
 
-let numero = Number(prompt([`Ingrese los numeros`]));
+let ingreso = prompt(`Ingrese los numeros`);
+let arrayNumber = ingreso.split(" ");
+let numeroMenor = 1;
+let numeroMayor = "";
 
-
-for (let i=0; i < numero.length; i ++) {
-    console.log(`El número menor es ${numero[i]}`);
+for (let i=0; i < arrayNumber.length; i ++) {
+    numero = Number(arrayNumber[i]);
+    console.log(numero);
    
 }
 
-alert(`El número menor es ${numero}`);
+// alert(`El número menor es ${numero}`);

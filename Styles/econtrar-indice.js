@@ -22,19 +22,3 @@ for (let i= 0; i <valueList.length; i ++) {
 
 
 
-
-let value = prompt([`Ingrese los valores deseados`]);
-let valueList = value.split (" ");
-let searchNumber = valueList.indexOf()
-let index = 0;
-
-
-
-for (let i= 0; i <valueList.length; i ++) {
-    index = Number(valueList[i]);
-   if (index === searchNumber) {
-    alert(`El número ${searchNumber} se encuentra en el índice ${i}`);
-    } 
-}
-
-

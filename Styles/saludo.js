@@ -15,17 +15,3 @@ for (let i=0; i < nombres.length; i ++) {
     alert(`¡Hola ${nombres[i]}!`);
 }
 
-
-
-// nombres = prompt([`Ingrese los nombres de las participante`]);
-
-// let saludo =" ";
-
-
-// for (let i=0; i < nombres.length; i ++) {
-//     console.log(`¡Hola ${nombres[i]}!`);
-//     nombres = nombres.split(`\n` );
-//     saludo += nombres + `\n` ;
-// }
- 
-// alert(saludo  )
