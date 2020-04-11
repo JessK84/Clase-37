@@ -9,7 +9,9 @@ let serieAnimales = animales.split(" ");
 let indexMosquitos = serieAnimales.indexOf("mosquitos");
 let indexAlacranes = serieAnimales.indexOf("alacranes");
 
-let nuevosAnimales = serieAnimales.splice(indexMosquitos, 1);
-nuevosAnimales = serieAnimales.splice(indexAlacranes, 1)
+// for(let i=0; i<serieAnimales.length; i++){
+serieAnimales.splice(indexMosquitos, 1)
+serieAnimales.splice(indexAlacranes, 1)
 
 alert(`Animales sin insectos: `+ serieAnimales)
+

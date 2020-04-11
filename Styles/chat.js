@@ -24,8 +24,7 @@ if (userName.length == 1) {
     let firstName = userName.shift();
     let secondName = userName.shift();
     alert(`${firstName}, ${secondName} y 1 usuario más están conectados`)
-} 
-else {
+} else {
     let firstName = userName.shift();
     let secondName = userName.shift();
     alert(`${firstName}, ${secondName} y más usuarios están conectados`)

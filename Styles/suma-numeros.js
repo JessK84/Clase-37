@@ -6,7 +6,7 @@
 // La suma de todos los números es: 58
 
 
-let numeros = prompt([`Ingrese los numeros`]);
+let numeros = prompt(`Ingrese los numeros`);
 let listadoNumeros = numeros.split (" ");
 let numero =0;
 let resultado =0;

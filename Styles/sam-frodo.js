@@ -13,7 +13,9 @@ let frodo = valueList.indexOf("frodo");
 let mensajeJuntos = "Frodo y Sam están juntos, ¡Frodo está a salvo!" ;
 let mensajeSeparados = "Frodo y Sam están separados, ¡Frodo está en peligro!" ;
 
-if (sam === (frodo -1)||sam === (frodo +1)) {
+if (sam === (frodo -1)) {
+    alert(mensajeJuntos)
+} else if (sam === (frodo +1)) {
     alert(mensajeJuntos)
 } else {
     alert(mensajeSeparados)

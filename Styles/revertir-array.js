@@ -6,8 +6,15 @@
 
 let numeros = prompt("Ingrese los números deseados");
 let serieNumeros = numeros.split(" ");
-let reverseList = serieNumeros.reverse();
 
+let arrayinvertido=[];
+let resultado="";
 
-alert(`Ingresaste: ${numeros} \nTus números invertidos son: ${serieNumeros}`)
+for (let i = -serieNumeros.length; i <= serieNumeros.length; i++) {
+    resultado= serieNumeros.pop()
+    arrayinvertido.push(resultado)
+}
+
+    alert(`Ingresaste: \n${numeros} \nTus números invertidos son:`+`\n`+ `${arrayinvertido}`)
+
 
