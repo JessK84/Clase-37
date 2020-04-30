@@ -4,7 +4,7 @@
 // ¡Hola Ada!
 // ¡Hola Greta!
 // ¡Hola Grace!
-nombres = prompt([`Ingrese los nombres de las participante`]);
+nombres = prompt(`Ingrese los nombres de las participante`);
 nombres = nombres.split( ` ` );
 
 

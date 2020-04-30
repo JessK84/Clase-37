@@ -12,7 +12,7 @@ let result="";
 
 for (let i = 0; i < words.length; i++) { 
     let cutLetters=words[i].slice(0, -index);
-    result+=` `+ cutLetters;
+    result+=` `+`\n` + `-`+ cutLetters;
 }
 
-alert(result)
+alert(`Tu nuevas palabras:`+ result)
